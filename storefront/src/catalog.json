@@ -1,0 +1,1003 @@
+{
+  "version": 1,
+  "shop": {
+    "slug": "stoic",
+    "name": "STOIC",
+    "tagline": "Classical sculpture, screenprinted on heavyweight garment-dyed blanks.",
+    "about": "STOIC prints classical sculpture as weathered screenprint on heavyweight, garment-dyed blanks: coarse halftone and peeling spot colour in olive, ochre, rust and stone, on washed black, bone and olive. Five pieces, made to order by Printful and shipped directly. The shop runs on its own stack: Openfront sells, Printful prints.",
+    "category": "Apparel",
+    "accent": "#C08A2B",
+    "currency": "usd",
+    "region": {
+      "code": "us",
+      "name": "United States",
+      "taxRate": 0,
+      "countries": [
+        {
+          "iso2": "us",
+          "iso3": "usa",
+          "numCode": 840,
+          "name": "United States",
+          "displayName": "United States"
+        }
+      ]
+    },
+    "shipping": [
+      {
+        "name": "Standard shipping",
+        "amount": 800
+      }
+    ]
+  },
+  "assetsBase": "",
+  "categories": [
+    {
+      "handle": "tees",
+      "title": "Tees"
+    },
+    {
+      "handle": "hoodies",
+      "title": "Hoodies"
+    },
+    {
+      "handle": "long-sleeves",
+      "title": "Long sleeves"
+    }
+  ],
+  "products": [
+    {
+      "handle": "sculpture-hoodie",
+      "title": "The Sculpture Hoodie",
+      "category": "hoodies",
+      "design": "sculpture",
+      "description": "Oversized heavyweight hoodie featuring a striking graphic of a classical sculpture. 100% Cotton, Relaxed Fit, Garment Dyed. Made to order and shipped in 5 to 8 days.",
+      "blurb": "Oversized heavyweight hoodie featuring a striking graphic of a classical sculpture.",
+      "bullets": [
+        "100% Cotton",
+        "Relaxed Fit",
+        "Garment Dyed"
+      ],
+      "image": "/photos/sculpture-hoodie.webp",
+      "photos": [
+        "/photos/sculpture-hoodie.webp",
+        "/photos/sculpture-hoodie-pdp.webp"
+      ],
+      "options": [
+        "Color",
+        "Size"
+      ],
+      "colours": [
+        {
+          "id": "black",
+          "name": "Washed black",
+          "hex": "#1c1c1b"
+        },
+        {
+          "id": "grey",
+          "name": "Stone grey",
+          "hex": "#7d7a74"
+        },
+        {
+          "id": "bone",
+          "name": "Bone",
+          "hex": "#d9d0bf"
+        },
+        {
+          "id": "olive",
+          "name": "Olive",
+          "hex": "#5d6034"
+        }
+      ],
+      "variants": [
+        {
+          "title": "Washed black / XS",
+          "sku": "STO-SCH-BLA-XS",
+          "price": 11800,
+          "options": [
+            "Washed black",
+            "XS"
+          ]
+        },
+        {
+          "title": "Washed black / S",
+          "sku": "STO-SCH-BLA-S",
+          "price": 11800,
+          "options": [
+            "Washed black",
+            "S"
+          ]
+        },
+        {
+          "title": "Washed black / M",
+          "sku": "STO-SCH-BLA-M",
+          "price": 11800,
+          "options": [
+            "Washed black",
+            "M"
+          ]
+        },
+        {
+          "title": "Washed black / L",
+          "sku": "STO-SCH-BLA-L",
+          "price": 11800,
+          "options": [
+            "Washed black",
+            "L"
+          ]
+        },
+        {
+          "title": "Washed black / XL",
+          "sku": "STO-SCH-BLA-XL",
+          "price": 11800,
+          "options": [
+            "Washed black",
+            "XL"
+          ]
+        },
+        {
+          "title": "Washed black / XXL",
+          "sku": "STO-SCH-BLA-XXL",
+          "price": 11800,
+          "options": [
+            "Washed black",
+            "XXL"
+          ]
+        },
+        {
+          "title": "Stone grey / XS",
+          "sku": "STO-SCH-GRE-XS",
+          "price": 11800,
+          "options": [
+            "Stone grey",
+            "XS"
+          ]
+        },
+        {
+          "title": "Stone grey / S",
+          "sku": "STO-SCH-GRE-S",
+          "price": 11800,
+          "options": [
+            "Stone grey",
+            "S"
+          ]
+        },
+        {
+          "title": "Stone grey / M",
+          "sku": "STO-SCH-GRE-M",
+          "price": 11800,
+          "options": [
+            "Stone grey",
+            "M"
+          ]
+        },
+        {
+          "title": "Stone grey / L",
+          "sku": "STO-SCH-GRE-L",
+          "price": 11800,
+          "options": [
+            "Stone grey",
+            "L"
+          ]
+        },
+        {
+          "title": "Stone grey / XL",
+          "sku": "STO-SCH-GRE-XL",
+          "price": 11800,
+          "options": [
+            "Stone grey",
+            "XL"
+          ]
+        },
+        {
+          "title": "Stone grey / XXL",
+          "sku": "STO-SCH-GRE-XXL",
+          "price": 11800,
+          "options": [
+            "Stone grey",
+            "XXL"
+          ]
+        },
+        {
+          "title": "Bone / XS",
+          "sku": "STO-SCH-BON-XS",
+          "price": 11800,
+          "options": [
+            "Bone",
+            "XS"
+          ]
+        },
+        {
+          "title": "Bone / S",
+          "sku": "STO-SCH-BON-S",
+          "price": 11800,
+          "options": [
+            "Bone",
+            "S"
+          ]
+        },
+        {
+          "title": "Bone / M",
+          "sku": "STO-SCH-BON-M",
+          "price": 11800,
+          "options": [
+            "Bone",
+            "M"
+          ]
+        },
+        {
+          "title": "Bone / L",
+          "sku": "STO-SCH-BON-L",
+          "price": 11800,
+          "options": [
+            "Bone",
+            "L"
+          ]
+        },
+        {
+          "title": "Bone / XL",
+          "sku": "STO-SCH-BON-XL",
+          "price": 11800,
+          "options": [
+            "Bone",
+            "XL"
+          ]
+        },
+        {
+          "title": "Bone / XXL",
+          "sku": "STO-SCH-BON-XXL",
+          "price": 11800,
+          "options": [
+            "Bone",
+            "XXL"
+          ]
+        },
+        {
+          "title": "Olive / XS",
+          "sku": "STO-SCH-OLI-XS",
+          "price": 11800,
+          "options": [
+            "Olive",
+            "XS"
+          ]
+        },
+        {
+          "title": "Olive / S",
+          "sku": "STO-SCH-OLI-S",
+          "price": 11800,
+          "options": [
+            "Olive",
+            "S"
+          ]
+        },
+        {
+          "title": "Olive / M",
+          "sku": "STO-SCH-OLI-M",
+          "price": 11800,
+          "options": [
+            "Olive",
+            "M"
+          ]
+        },
+        {
+          "title": "Olive / L",
+          "sku": "STO-SCH-OLI-L",
+          "price": 11800,
+          "options": [
+            "Olive",
+            "L"
+          ]
+        },
+        {
+          "title": "Olive / XL",
+          "sku": "STO-SCH-OLI-XL",
+          "price": 11800,
+          "options": [
+            "Olive",
+            "XL"
+          ]
+        },
+        {
+          "title": "Olive / XXL",
+          "sku": "STO-SCH-OLI-XXL",
+          "price": 11800,
+          "options": [
+            "Olive",
+            "XXL"
+          ]
+        }
+      ]
+    },
+    {
+      "handle": "emperor-tee",
+      "title": "The Emperor Tee",
+      "category": "tees",
+      "design": "sculpture",
+      "description": "Boxy fit tee with a weathered screenprint of a classical sculpture on the chest. 100% Cotton, Vintage Wash, Boxy Fit. Made to order and shipped in 5 to 8 days.",
+      "blurb": "Boxy fit tee with a weathered screenprint of a classical sculpture on the chest.",
+      "bullets": [
+        "100% Cotton",
+        "Vintage Wash",
+        "Boxy Fit"
+      ],
+      "image": "/photos/emperor-tee.webp",
+      "photos": [
+        "/photos/emperor-tee.webp"
+      ],
+      "options": [
+        "Color",
+        "Size"
+      ],
+      "colours": [
+        {
+          "id": "bone",
+          "name": "Bone",
+          "hex": "#d9d0bf"
+        },
+        {
+          "id": "black",
+          "name": "Washed black",
+          "hex": "#1c1c1b"
+        }
+      ],
+      "variants": [
+        {
+          "title": "Bone / XS",
+          "sku": "STO-EMP-BON-XS",
+          "price": 6200,
+          "options": [
+            "Bone",
+            "XS"
+          ]
+        },
+        {
+          "title": "Bone / S",
+          "sku": "STO-EMP-BON-S",
+          "price": 6200,
+          "options": [
+            "Bone",
+            "S"
+          ]
+        },
+        {
+          "title": "Bone / M",
+          "sku": "STO-EMP-BON-M",
+          "price": 6200,
+          "options": [
+            "Bone",
+            "M"
+          ]
+        },
+        {
+          "title": "Bone / L",
+          "sku": "STO-EMP-BON-L",
+          "price": 6200,
+          "options": [
+            "Bone",
+            "L"
+          ]
+        },
+        {
+          "title": "Bone / XL",
+          "sku": "STO-EMP-BON-XL",
+          "price": 6200,
+          "options": [
+            "Bone",
+            "XL"
+          ]
+        },
+        {
+          "title": "Bone / XXL",
+          "sku": "STO-EMP-BON-XXL",
+          "price": 6200,
+          "options": [
+            "Bone",
+            "XXL"
+          ]
+        },
+        {
+          "title": "Washed black / XS",
+          "sku": "STO-EMP-BLA-XS",
+          "price": 6200,
+          "options": [
+            "Washed black",
+            "XS"
+          ]
+        },
+        {
+          "title": "Washed black / S",
+          "sku": "STO-EMP-BLA-S",
+          "price": 6200,
+          "options": [
+            "Washed black",
+            "S"
+          ]
+        },
+        {
+          "title": "Washed black / M",
+          "sku": "STO-EMP-BLA-M",
+          "price": 6200,
+          "options": [
+            "Washed black",
+            "M"
+          ]
+        },
+        {
+          "title": "Washed black / L",
+          "sku": "STO-EMP-BLA-L",
+          "price": 6200,
+          "options": [
+            "Washed black",
+            "L"
+          ]
+        },
+        {
+          "title": "Washed black / XL",
+          "sku": "STO-EMP-BLA-XL",
+          "price": 6200,
+          "options": [
+            "Washed black",
+            "XL"
+          ]
+        },
+        {
+          "title": "Washed black / XXL",
+          "sku": "STO-EMP-BLA-XXL",
+          "price": 6200,
+          "options": [
+            "Washed black",
+            "XXL"
+          ]
+        }
+      ]
+    },
+    {
+      "handle": "stoic-ls",
+      "title": "The Stoic L/S",
+      "category": "long-sleeves",
+      "design": "sculpture",
+      "description": "Long sleeve with a laurel wreath on the chest and subtle branding. 100% Cotton, Vintage Wash, Relaxed Fit. Made to order and shipped in 5 to 8 days.",
+      "blurb": "Long sleeve with a laurel wreath on the chest and subtle branding.",
+      "bullets": [
+        "100% Cotton",
+        "Vintage Wash",
+        "Relaxed Fit"
+      ],
+      "image": "/photos/stoic-ls.webp",
+      "photos": [
+        "/photos/stoic-ls.webp"
+      ],
+      "options": [
+        "Color",
+        "Size"
+      ],
+      "colours": [
+        {
+          "id": "black",
+          "name": "Washed black",
+          "hex": "#1c1c1b"
+        },
+        {
+          "id": "olive",
+          "name": "Olive",
+          "hex": "#5d6034"
+        }
+      ],
+      "variants": [
+        {
+          "title": "Washed black / XS",
+          "sku": "STO-SLS-BLA-XS",
+          "price": 7600,
+          "options": [
+            "Washed black",
+            "XS"
+          ]
+        },
+        {
+          "title": "Washed black / S",
+          "sku": "STO-SLS-BLA-S",
+          "price": 7600,
+          "options": [
+            "Washed black",
+            "S"
+          ]
+        },
+        {
+          "title": "Washed black / M",
+          "sku": "STO-SLS-BLA-M",
+          "price": 7600,
+          "options": [
+            "Washed black",
+            "M"
+          ]
+        },
+        {
+          "title": "Washed black / L",
+          "sku": "STO-SLS-BLA-L",
+          "price": 7600,
+          "options": [
+            "Washed black",
+            "L"
+          ]
+        },
+        {
+          "title": "Washed black / XL",
+          "sku": "STO-SLS-BLA-XL",
+          "price": 7600,
+          "options": [
+            "Washed black",
+            "XL"
+          ]
+        },
+        {
+          "title": "Washed black / XXL",
+          "sku": "STO-SLS-BLA-XXL",
+          "price": 7600,
+          "options": [
+            "Washed black",
+            "XXL"
+          ]
+        },
+        {
+          "title": "Olive / XS",
+          "sku": "STO-SLS-OLI-XS",
+          "price": 7600,
+          "options": [
+            "Olive",
+            "XS"
+          ]
+        },
+        {
+          "title": "Olive / S",
+          "sku": "STO-SLS-OLI-S",
+          "price": 7600,
+          "options": [
+            "Olive",
+            "S"
+          ]
+        },
+        {
+          "title": "Olive / M",
+          "sku": "STO-SLS-OLI-M",
+          "price": 7600,
+          "options": [
+            "Olive",
+            "M"
+          ]
+        },
+        {
+          "title": "Olive / L",
+          "sku": "STO-SLS-OLI-L",
+          "price": 7600,
+          "options": [
+            "Olive",
+            "L"
+          ]
+        },
+        {
+          "title": "Olive / XL",
+          "sku": "STO-SLS-OLI-XL",
+          "price": 7600,
+          "options": [
+            "Olive",
+            "XL"
+          ]
+        },
+        {
+          "title": "Olive / XXL",
+          "sku": "STO-SLS-OLI-XXL",
+          "price": 7600,
+          "options": [
+            "Olive",
+            "XXL"
+          ]
+        }
+      ]
+    },
+    {
+      "handle": "virtue-tee",
+      "title": "The Virtue Tee",
+      "category": "tees",
+      "design": "sculpture",
+      "description": "Boxy fit tee featuring a classical sculpture graphic. 100% Cotton, Vintage Wash, Relaxed Fit. Made to order and shipped in 5 to 8 days.",
+      "blurb": "Boxy fit tee featuring a classical sculpture graphic.",
+      "bullets": [
+        "100% Cotton",
+        "Vintage Wash",
+        "Relaxed Fit"
+      ],
+      "image": "/photos/virtue-tee.webp",
+      "photos": [
+        "/photos/virtue-tee.webp",
+        "/photos/virtue-tee-pdp.webp"
+      ],
+      "options": [
+        "Color",
+        "Size"
+      ],
+      "colours": [
+        {
+          "id": "bone",
+          "name": "Bone",
+          "hex": "#d9d0bf"
+        },
+        {
+          "id": "olive",
+          "name": "Olive",
+          "hex": "#5d6034"
+        },
+        {
+          "id": "black",
+          "name": "Washed black",
+          "hex": "#1c1c1b"
+        },
+        {
+          "id": "rust",
+          "name": "Rust",
+          "hex": "#9c4f43"
+        }
+      ],
+      "variants": [
+        {
+          "title": "Bone / XS",
+          "sku": "STO-VRT-BON-XS",
+          "price": 6200,
+          "options": [
+            "Bone",
+            "XS"
+          ]
+        },
+        {
+          "title": "Bone / S",
+          "sku": "STO-VRT-BON-S",
+          "price": 6200,
+          "options": [
+            "Bone",
+            "S"
+          ]
+        },
+        {
+          "title": "Bone / M",
+          "sku": "STO-VRT-BON-M",
+          "price": 6200,
+          "options": [
+            "Bone",
+            "M"
+          ]
+        },
+        {
+          "title": "Bone / L",
+          "sku": "STO-VRT-BON-L",
+          "price": 6200,
+          "options": [
+            "Bone",
+            "L"
+          ]
+        },
+        {
+          "title": "Bone / XL",
+          "sku": "STO-VRT-BON-XL",
+          "price": 6200,
+          "options": [
+            "Bone",
+            "XL"
+          ]
+        },
+        {
+          "title": "Bone / XXL",
+          "sku": "STO-VRT-BON-XXL",
+          "price": 6200,
+          "options": [
+            "Bone",
+            "XXL"
+          ]
+        },
+        {
+          "title": "Olive / XS",
+          "sku": "STO-VRT-OLI-XS",
+          "price": 6200,
+          "options": [
+            "Olive",
+            "XS"
+          ]
+        },
+        {
+          "title": "Olive / S",
+          "sku": "STO-VRT-OLI-S",
+          "price": 6200,
+          "options": [
+            "Olive",
+            "S"
+          ]
+        },
+        {
+          "title": "Olive / M",
+          "sku": "STO-VRT-OLI-M",
+          "price": 6200,
+          "options": [
+            "Olive",
+            "M"
+          ]
+        },
+        {
+          "title": "Olive / L",
+          "sku": "STO-VRT-OLI-L",
+          "price": 6200,
+          "options": [
+            "Olive",
+            "L"
+          ]
+        },
+        {
+          "title": "Olive / XL",
+          "sku": "STO-VRT-OLI-XL",
+          "price": 6200,
+          "options": [
+            "Olive",
+            "XL"
+          ]
+        },
+        {
+          "title": "Olive / XXL",
+          "sku": "STO-VRT-OLI-XXL",
+          "price": 6200,
+          "options": [
+            "Olive",
+            "XXL"
+          ]
+        },
+        {
+          "title": "Washed black / XS",
+          "sku": "STO-VRT-BLA-XS",
+          "price": 6200,
+          "options": [
+            "Washed black",
+            "XS"
+          ]
+        },
+        {
+          "title": "Washed black / S",
+          "sku": "STO-VRT-BLA-S",
+          "price": 6200,
+          "options": [
+            "Washed black",
+            "S"
+          ]
+        },
+        {
+          "title": "Washed black / M",
+          "sku": "STO-VRT-BLA-M",
+          "price": 6200,
+          "options": [
+            "Washed black",
+            "M"
+          ]
+        },
+        {
+          "title": "Washed black / L",
+          "sku": "STO-VRT-BLA-L",
+          "price": 6200,
+          "options": [
+            "Washed black",
+            "L"
+          ]
+        },
+        {
+          "title": "Washed black / XL",
+          "sku": "STO-VRT-BLA-XL",
+          "price": 6200,
+          "options": [
+            "Washed black",
+            "XL"
+          ]
+        },
+        {
+          "title": "Washed black / XXL",
+          "sku": "STO-VRT-BLA-XXL",
+          "price": 6200,
+          "options": [
+            "Washed black",
+            "XXL"
+          ]
+        },
+        {
+          "title": "Rust / XS",
+          "sku": "STO-VRT-RUS-XS",
+          "price": 6200,
+          "options": [
+            "Rust",
+            "XS"
+          ]
+        },
+        {
+          "title": "Rust / S",
+          "sku": "STO-VRT-RUS-S",
+          "price": 6200,
+          "options": [
+            "Rust",
+            "S"
+          ]
+        },
+        {
+          "title": "Rust / M",
+          "sku": "STO-VRT-RUS-M",
+          "price": 6200,
+          "options": [
+            "Rust",
+            "M"
+          ]
+        },
+        {
+          "title": "Rust / L",
+          "sku": "STO-VRT-RUS-L",
+          "price": 6200,
+          "options": [
+            "Rust",
+            "L"
+          ]
+        },
+        {
+          "title": "Rust / XL",
+          "sku": "STO-VRT-RUS-XL",
+          "price": 6200,
+          "options": [
+            "Rust",
+            "XL"
+          ]
+        },
+        {
+          "title": "Rust / XXL",
+          "sku": "STO-VRT-RUS-XXL",
+          "price": 6200,
+          "options": [
+            "Rust",
+            "XXL"
+          ]
+        }
+      ]
+    },
+    {
+      "handle": "philosopher-ls",
+      "title": "The Philosopher L/S",
+      "category": "long-sleeves",
+      "design": "sculpture",
+      "description": "Long sleeve with classical artwork and subtle branding. 100% Cotton, Vintage Wash, Relaxed Fit. Made to order and shipped in 5 to 8 days.",
+      "blurb": "Long sleeve with classical artwork and subtle branding.",
+      "bullets": [
+        "100% Cotton",
+        "Vintage Wash",
+        "Relaxed Fit"
+      ],
+      "image": "/photos/philosopher-ls.webp",
+      "photos": [
+        "/photos/philosopher-ls.webp",
+        "/photos/philosopher-ls-pdp.webp"
+      ],
+      "options": [
+        "Color",
+        "Size"
+      ],
+      "colours": [
+        {
+          "id": "charcoal",
+          "name": "Charcoal",
+          "hex": "#34363a"
+        },
+        {
+          "id": "olive",
+          "name": "Olive",
+          "hex": "#5d6034"
+        }
+      ],
+      "variants": [
+        {
+          "title": "Charcoal / XS",
+          "sku": "STO-PHL-CHA-XS",
+          "price": 7600,
+          "options": [
+            "Charcoal",
+            "XS"
+          ]
+        },
+        {
+          "title": "Charcoal / S",
+          "sku": "STO-PHL-CHA-S",
+          "price": 7600,
+          "options": [
+            "Charcoal",
+            "S"
+          ]
+        },
+        {
+          "title": "Charcoal / M",
+          "sku": "STO-PHL-CHA-M",
+          "price": 7600,
+          "options": [
+            "Charcoal",
+            "M"
+          ]
+        },
+        {
+          "title": "Charcoal / L",
+          "sku": "STO-PHL-CHA-L",
+          "price": 7600,
+          "options": [
+            "Charcoal",
+            "L"
+          ]
+        },
+        {
+          "title": "Charcoal / XL",
+          "sku": "STO-PHL-CHA-XL",
+          "price": 7600,
+          "options": [
+            "Charcoal",
+            "XL"
+          ]
+        },
+        {
+          "title": "Charcoal / XXL",
+          "sku": "STO-PHL-CHA-XXL",
+          "price": 7600,
+          "options": [
+            "Charcoal",
+            "XXL"
+          ]
+        },
+        {
+          "title": "Olive / XS",
+          "sku": "STO-PHL-OLI-XS",
+          "price": 7600,
+          "options": [
+            "Olive",
+            "XS"
+          ]
+        },
+        {
+          "title": "Olive / S",
+          "sku": "STO-PHL-OLI-S",
+          "price": 7600,
+          "options": [
+            "Olive",
+            "S"
+          ]
+        },
+        {
+          "title": "Olive / M",
+          "sku": "STO-PHL-OLI-M",
+          "price": 7600,
+          "options": [
+            "Olive",
+            "M"
+          ]
+        },
+        {
+          "title": "Olive / L",
+          "sku": "STO-PHL-OLI-L",
+          "price": 7600,
+          "options": [
+            "Olive",
+            "L"
+          ]
+        },
+        {
+          "title": "Olive / XL",
+          "sku": "STO-PHL-OLI-XL",
+          "price": 7600,
+          "options": [
+            "Olive",
+            "XL"
+          ]
+        },
+        {
+          "title": "Olive / XXL",
+          "sku": "STO-PHL-OLI-XXL",
+          "price": 7600,
+          "options": [
+            "Olive",
+            "XXL"
+          ]
+        }
+      ]
+    }
+  ]
+}
