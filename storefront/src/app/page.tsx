@@ -22,11 +22,11 @@ export default async function Home() {
           <div className="absolute inset-0 bg-gradient-to-r from-[#0b0a09] via-[#0b0a09]/40 to-transparent md:via-transparent" />
           <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-[#0b0a09] to-transparent" />
         </div>
-        <div className="frame flex min-h-[560px] flex-col justify-center pb-10 pt-28 md:min-h-[640px] lg:min-h-[700px]">
-          <p className="wordmark text-[length:clamp(88px,22vw,300px)] leading-[0.9] text-ink" aria-hidden="true">
+        <div className="frame flex min-h-[440px] flex-col justify-center pb-8 pt-24 md:min-h-[460px] lg:min-h-[480px]">
+          <p className="wordmark text-[length:clamp(72px,12vw,176px)] leading-[0.9] text-ink" aria-hidden="true">
             STOIC
           </p>
-          <div className="mt-10 w-[104px] border-t border-ink/60 md:mt-16" />
+          <div className="mt-8 w-[104px] border-t border-ink/60 md:mt-10" />
           <Link href="/shop" className="caps mt-6 inline-flex min-h-11 items-center gap-3 self-start hover:opacity-70">
             Shop collection <span aria-hidden="true">→</span>
           </Link>
