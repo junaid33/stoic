@@ -23,7 +23,7 @@ export default async function Home() {
           <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-[#0b0a09] to-transparent" />
         </div>
         <div className="frame flex min-h-[560px] flex-col justify-center pb-10 pt-28 md:min-h-[640px] lg:min-h-[700px]">
-          <p className="wordmark text-[clamp(88px,22vw,300px)] leading-[0.9] text-ink" aria-hidden="true">
+          <p className="wordmark text-[length:clamp(88px,22vw,300px)] leading-[0.9] text-ink" aria-hidden="true">
             STOIC
           </p>
           <div className="mt-10 w-[104px] border-t border-ink/60 md:mt-16" />

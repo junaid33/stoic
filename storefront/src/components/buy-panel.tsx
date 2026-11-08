@@ -46,7 +46,7 @@ export function BuyPanel({
   const selected = single ? options[0] : options.find((o) => o.size === size);
   const low = Math.min(...options.map((o) => o.price));
   const price = selected ? money(selected.price) : `${options.some((o) => o.price !== low) ? "From " : ""}${money(low)}`;
-  const rows = facts ?? ["Made to order by Printful, ships in 2 to 5 days", "Flat $8 US shipping", "Front only, nothing on the back"];
+  const rows = facts ?? ["Made to order, ships from the US", "Flat $8 US shipping", "Front only, nothing on the back"];
   const icons = [Factory, Truck, Shirt];
 
   return (

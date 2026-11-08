@@ -56,7 +56,7 @@ export function ProductView({ title, price, blurb, bullets, photos, colours, siz
           <div role="group" aria-label={`Colour: ${colour}`} className="flex items-center gap-1">
             {colours.map((c) => (
               <button key={c.id} type="button" onClick={() => setColour(c.name)} aria-label={c.name} aria-pressed={c.name === colour} className="flex size-11 items-center justify-center">
-                <span className={`block size-[22px] rounded-full ${c.name === colour ? "outline outline-2 outline-offset-2 outline-ink" : ""}`} style={{ background: c.hex }} />
+                <span className={`block size-[22px] rounded-full border border-ink/30 ${c.name === colour ? "outline outline-2 outline-offset-2 outline-ink" : ""}`} style={{ background: c.hex }} />
               </button>
             ))}
             <span className="caps ml-2 text-muted">{colour}</span>
@@ -87,7 +87,7 @@ export function ProductView({ title, price, blurb, bullets, photos, colours, siz
         <ul className="mt-5 list-disc pl-5 text-[14px] leading-[1.9]">
           {bullets.map((b) => <li key={b}>{b}</li>)}
         </ul>
-        <p className="mt-6 border-t border-line pt-4 text-[13px] text-muted">Made to order by Printful and shipped from the US in 5 to 8 days. Flat $8 US shipping. <Link href="/shipping" className="link">Shipping &amp; returns</Link></p>
+        <p className="mt-6 border-t border-line pt-4 text-[13px] text-muted">Made to order and shipped from the US. Flat $8 US shipping. <Link href="/shipping" className="link">Shipping &amp; returns</Link></p>
       </div>
     </div>
   );

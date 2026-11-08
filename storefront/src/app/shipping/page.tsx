@@ -9,7 +9,7 @@ export default async function ShippingPage() {
   await connection();
   const email = process.env.SUPPORT_EMAIL || null;
   const sections = [
-    ["made", "Made to order", "Nothing is made until you order. Printful prints each piece direct to garment, usually within 2 to 5 business days, then ships it from its US facilities."],
+    ["made", "Made to order", "Nothing is made until you order. Each piece is printed direct to garment, then shipped from the US."],
     ["shipping", "Shipping", "We ship to US addresses for a flat $8 per order. Your order page shows tracking as soon as the parcel leaves."],
     ["returns", "Returns", "Because every piece is made for you, we cannot take returns for a change of mind or the wrong size; the size guide gives the exact measurements. If something arrives misprinted, damaged or wrong, tell us within 30 days of delivery with your order number and a photo, and we will remake it or refund you."],
     ["care", "Care", "Wash cold and inside out, then hang dry or tumble dry low. Do not iron over the print."],

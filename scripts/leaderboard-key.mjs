@@ -1,9 +1,10 @@
 // Creates the read-only Openfront API key the Agent Commerce leaderboard uses
 // to read STOIC's orders, payments and products (src/lib/server/live-shops.ts).
 //
-// Openfront grants an API key its scopes OR its owner's role permissions, so a
-// key created by the admin can write anything. The key is therefore owned by a
-// dedicated reader user with no role: it can do only what its read scopes allow.
+// Openfront grants an API key only what its scopes AND its owner's role both
+// allow, so a key created by the admin could write anything its scopes name.
+// The key is therefore owned by a dedicated reader user whose role holds only
+// the three read permissions: it can do only what they allow.
 // The script checks that a write is refused before it keeps the key.
 //
 // The key is generated here, stored only in .env.local as
@@ -48,7 +49,10 @@ if (!reader) {
     )
   ).createUser;
 }
-if (reader.role) throw new Error("The leaderboard reader has a role; remove it before issuing a key.");
+const READ = { canReadOrders: true, canReadPayments: true, canReadProducts: true };
+let role = (await gql(`query{ roles(where:{ name:{ equals:"Leaderboard reader" } }){ id } }`, {}, admin)).roles[0];
+if (!role) role = (await gql(`mutation($d:RoleCreateInput!){ createRole(data:$d){ id } }`, { d: { name: "Leaderboard reader", ...READ } }, admin)).createRole;
+await gql(`mutation($id:ID!,$r:ID!){ updateUser(where:{id:$id}, data:{ role:{ connect:{ id:$r } } }){ id } }`, { id: reader.id, r: role.id }, admin);
 
 // Replace any earlier leaderboard keys.
 const old = await gql(`query($n:String!){ apiKeys(where:{ name:{ equals:$n } }){ id } }`, { n: NAME }, admin);

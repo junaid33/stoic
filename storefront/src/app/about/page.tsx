@@ -12,7 +12,7 @@ export default function About() {
           STOIC is classical sculpture pulled through an old screen: weathered screenprints of antique heads, laurel and four-point stars, in olive, ochre, rust and stone, on washed heavyweight blanks.
         </p>
         <p className="mt-4 text-[16px] leading-[1.7] text-muted">
-          Five pieces. Nothing is made until you order: each one is printed to order by Printful and shipped from the US.
+          Five pieces. Nothing is made until you order: each one is made to order and shipped from the US.
         </p>
         <Link href="/shop" className="btn btn-primary mt-8 w-full md:w-[300px]">
           Shop collection <span aria-hidden="true">→</span>
