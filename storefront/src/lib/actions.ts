@@ -200,15 +200,14 @@ export async function startCardPayment(): Promise<{ clientSecret?: string; sessi
   const { cart, headers } = await auth();
   if (!stripe || !cart) return { error: "Card payments are not available." };
   try {
-    await gql(`mutation($id:ID!){ createActiveCartPaymentSessions(cartId:$id){ id } }`, { id: cart.id }, headers);
-    const data = await gql<{ setActiveCartPaymentSession: { paymentCollection: { paymentSessions: { id: string; isSelected: boolean; data: { clientSecret?: string } | null; paymentProvider: { code: string } }[] } } }>(
-      `mutation($id:ID!,$provider:ID!){ setActiveCartPaymentSession(cartId:$id, providerId:$provider){ paymentCollection { paymentSessions { id isSelected data paymentProvider { code } } } } }`,
-      { id: cart.id, provider: stripe.id },
+    // Openfront's own storefront flow: initiatePaymentSession creates the Stripe
+    // payment intent and stores its client secret on the cart's payment session.
+    const data = await gql<{ initiatePaymentSession: { id: string; data: { clientSecret?: string } | null } | null }>(
+      `mutation($id:ID!,$provider:String!){ initiatePaymentSession(cartId:$id, paymentProviderId:$provider){ id data } }`,
+      { id: cart.id, provider: stripe.code },
       headers,
     );
-    const session = data.setActiveCartPaymentSession.paymentCollection.paymentSessions.find(
-      (s) => s.paymentProvider.code === stripe.code && s.isSelected,
-    );
+    const session = data.initiatePaymentSession;
     if (!session?.data?.clientSecret) return { error: "The payment could not be started." };
     return { clientSecret: session.data.clientSecret, sessionId: session.id };
   } catch (error) {

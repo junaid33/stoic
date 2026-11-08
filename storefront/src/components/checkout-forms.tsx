@@ -167,7 +167,7 @@ function PayForm({ sessionId, total }: { sessionId: string; total: string }) {
   }
   return (
     <form onSubmit={pay}>
-      <PaymentElement />
+      <PaymentElement options={{ layout: { type: "accordion", defaultCollapsed: false, radios: false, spacedAccordionItems: true } }} />
       <div aria-live="polite" className="mt-4 empty:hidden">
         {error && <Problem>{error}</Problem>}
       </div>
@@ -194,11 +194,11 @@ export function CardPayment({ publishableKey, total }: { publishableKey: string;
         clientSecret: payment.clientSecret,
         appearance: {
           theme: "night",
-          variables: { colorPrimary: "#ecebe6", colorBackground: "#161618", colorText: "#ecebe6", colorTextSecondary: "#a3a29c", colorDanger: "#ff7a6b", fontFamily: "system-ui, sans-serif", fontSizeBase: "16px", borderRadius: "0px" },
+          variables: { colorPrimary: "#e6ddd0", colorBackground: "#181715", colorText: "#e6ddd0", colorTextSecondary: "#a39d92", colorDanger: "#ff7a6b", fontFamily: "system-ui, sans-serif", fontSizeBase: "16px", borderRadius: "0px" },
           rules: {
-            ".Input": { border: "1px solid #3d3d42", boxShadow: "none", padding: "14px" },
-            ".Input:focus": { border: "1px solid #4d86ff", boxShadow: "0 0 0 1px #4d86ff" },
-            ".Label": { fontSize: "12px", fontWeight: "600", color: "#ecebe6" },
+            ".Input": { border: "1px solid #4a463f", boxShadow: "none", padding: "14px" },
+            ".Input:focus": { border: "1px solid #c08a2b", boxShadow: "0 0 0 1px #c08a2b" },
+            ".Label": { fontSize: "12px", fontWeight: "600", color: "#e6ddd0" },
           },
         },
       }}

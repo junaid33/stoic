@@ -4,7 +4,7 @@
     "slug": "stoic",
     "name": "STOIC",
     "tagline": "Classical sculpture, screenprinted on heavyweight garment-dyed blanks.",
-    "about": "STOIC prints classical sculpture as weathered screenprint on heavyweight, garment-dyed blanks: coarse halftone and peeling spot colour in olive, ochre, rust and stone, on washed black, bone and olive. Five pieces, made to order by Printful and shipped directly. The shop runs on its own stack: Openfront sells, Printful prints.",
+    "about": "STOIC prints classical sculpture as weathered screenprint on heavyweight, garment-dyed blanks: coarse halftone and peeling spot colour in olive, ochre, rust and stone, on washed black, bone and olive. Five pieces, made to order. The shop runs on its own stack: Openfront sells and Stripe takes payment.",
     "category": "Apparel",
     "accent": "#C08A2B",
     "currency": "usd",
@@ -29,7 +29,7 @@
       }
     ]
   },
-  "assetsBase": "",
+  "assetsBase": "https://storefront-production-f608.up.railway.app",
   "categories": [
     {
       "handle": "tees",
