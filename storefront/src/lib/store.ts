@@ -22,6 +22,7 @@ export type Product = {
   price: number;
   image: string;
   photos: string[];
+  photosByColour?: Record<string, string[]>;
   kind: Kind;
 };
 
@@ -64,6 +65,7 @@ function toProduct(remote: Remote): Product | null {
     price: Math.min(...variants.map((v) => v.price)),
     image: imageOf(remote.handle),
     photos: meta.photos,
+    photosByColour: (meta as { photosByColour?: Record<string, string[]> }).photosByColour,
     kind: kindOf(remote.handle),
   };
 }

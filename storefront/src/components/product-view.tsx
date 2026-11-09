@@ -13,8 +13,8 @@ const money = (cents: number) => new Intl.NumberFormat("en-US", { style: "curren
 
 // Bone product page as in the mock: gallery left, title, price, colour swatches,
 // sizes, size guide, ADD TO BAG, description, bullets and thumbnails.
-export function ProductView({ title, price, blurb, bullets, photos, colours, sizes, variants }: {
-  title: string; price: number; blurb: string; bullets: string[]; photos: string[]; colours: Colour[]; sizes: string[]; variants: Variant[];
+export function ProductView({ title, price, blurb, bullets, photos: defaultPhotos, photosByColour, colours, sizes, variants }: {
+  title: string; price: number; blurb: string; bullets: string[]; photos: string[]; photosByColour?: Record<string, string[]>; colours: Colour[]; sizes: string[]; variants: Variant[];
 }) {
   const [colour, setColour] = useState(colours[0]?.name ?? "");
   const [size, setSize] = useState("");
@@ -22,6 +22,7 @@ export function ProductView({ title, price, blurb, bullets, photos, colours, siz
   const [missing, setMissing] = useState(false);
   const [state, action, pending] = useActionState<ActionState, FormData>(addToCart, null);
   const sizeRef = useRef<HTMLDivElement>(null);
+  const photos = photosByColour?.[colour] ?? defaultPhotos;
   const selected = variants.find((v) => v.options[0] === colour && v.options[1] === size);
   const [first, second] = [shot, (shot + 1) % photos.length];
   return (
@@ -55,7 +56,7 @@ export function ProductView({ title, price, blurb, bullets, photos, colours, siz
           <input type="hidden" name="quantity" value={1} />
           <div role="group" aria-label={`Colour: ${colour}`} className="flex items-center gap-1">
             {colours.map((c) => (
-              <button key={c.id} type="button" onClick={() => setColour(c.name)} aria-label={c.name} aria-pressed={c.name === colour} className="flex size-11 items-center justify-center">
+              <button key={c.id} type="button" onClick={() => { setColour(c.name); setShot(0); }} aria-label={c.name} aria-pressed={c.name === colour} className="flex size-11 items-center justify-center">
                 <span className={`block size-[22px] rounded-full border border-ink/30 ${c.name === colour ? "outline outline-2 outline-offset-2 outline-ink" : ""}`} style={{ background: c.hex }} />
               </button>
             ))}

@@ -42,7 +42,9 @@ const pieces = [
     colours: ["bone", "olive", "black", "rust"],
     blurb: "Boxy fit tee featuring a classical sculpture graphic.",
     bullets: ["100% Cotton", "Vintage Wash", "Relaxed Fit"],
-    photos: ["virtue-tee.webp", "virtue-tee-pdp.webp"],
+    photos: ["virtue-tee-pdp.webp", "virtue-tee.webp"],
+    card: "virtue-tee.webp",
+    byColour: { black: ["virtue-tee.webp", "virtue-tee-pdp.webp"] },
   },
   {
     handle: "philosopher-ls", code: "PHL", title: "The Philosopher L/S", category: "long-sleeves", price: 7600,
@@ -81,8 +83,9 @@ const catalog = {
     description: `${p.blurb} ${p.bullets.join(", ")}. Made to order and shipped in 5 to 8 days.`,
     blurb: p.blurb,
     bullets: p.bullets,
-    image: `/photos/${p.photos[0]}`,
+    image: `/photos/${p.card ?? p.photos[0]}`,
     photos: p.photos.map((f) => `/photos/${f}`),
+    ...(p.byColour ? { photosByColour: Object.fromEntries(Object.entries(p.byColour).map(([c, fs]) => [COLOURS[c][0], fs.map((f) => `/photos/${f}`)])) } : {}),
     options: ["Color", "Size"],
     colours: p.colours.map((c) => ({ id: c, name: COLOURS[c][0], hex: COLOURS[c][1] })),
     variants: p.colours.flatMap((c) =>

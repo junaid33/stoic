@@ -26,6 +26,7 @@ export default async function ProductPage({ params }: Props) {
           blurb={product.blurb}
           bullets={product.bullets}
           photos={product.photos}
+          photosByColour={product.photosByColour}
           colours={product.colours}
           sizes={product.sizes}
           variants={product.variants}
